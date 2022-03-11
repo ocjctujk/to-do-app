@@ -1,0 +1,13 @@
+<div class="list-group-item">
+  <a style="cursor: pointer;" (click)="onDone()"
+    ><i
+      [ngClass]="task.done ? 'greenBG' : ''"
+      class="fa fa-check-square-o fa-2x"
+      aria-hidden="true"
+    ></i
+  ></a>
+  {{ task.name }}
+  <!-- {{ task.done }} -->
+  
+  <a (click)="onDelete()" style="cursor: pointer;"><i class="fa fa-trash-o fa-2x pull-right" style="color: red" aria-hidden="true"></i></a>
+</div>

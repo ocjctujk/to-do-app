@@ -1,0 +1,24 @@
+<div class="container">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <div class="text-center">
+      <div class="form-group" style="margin-top: 10px">
+        <input     
+          type="text"
+          class="form-control text-center"
+          id="taskname"
+          name="taskname"
+          placeholder="Enter task"
+          required
+          [(ngModel)]="name"
+        />
+        <button
+          type="submit"
+          class="btn btn-success text-center"
+          style="margin-top: 10px"
+        >
+          Add task
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
